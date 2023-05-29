@@ -73,10 +73,10 @@ const Calculator = () => {
           <button onClick={handleClearClick} className="clear-button" type="button">
             AC
           </button>
-          <button onClick={handleClearClick} className="clear-button" type="button">
+          <button onClick={() => handleOperatorClick('+/-')} className="clear-button" type="button">
             +/-
           </button>
-          <button onClick={handleClearClick} className="clear-button" type="button">
+          <button onClick={() => handleOperatorClick('%')} className="clear-button" type="button">
             %
           </button>
           <button onClick={() => handleOperatorClick('÷')} className="operator-button" type="button">
@@ -109,7 +109,7 @@ const Calculator = () => {
         </div>
         <div className="row">
           <button onClick={() => handleDigitClick('0')} className="zero-button" type="button">0</button>
-          <button onClick={() => handleDigitClick('.')} className="decimal-button" type="button">.</button>
+          <button onClick={() => handleDigitClick('.')} type="button">.</button>
           <button onClick={handleEqualClick} className="equal-button" type="button">=</button>
         </div>
       </div>
