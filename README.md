@@ -4,7 +4,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="#"  alt="project">
   <br/>
 
   <h3><b> Math Magician</b></h3>
