@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
 import calculate from '../logic/calculate';
 import operate from '../logic/operate';
@@ -7,6 +7,25 @@ const Calculator = () => {
   const [displayValue, setDisplayValue] = useState('0');
   const [previousValue, setPreviousValue] = useState(null);
   const [operator, setOperator] = useState(null);
+  const handleButtonClick = (buttonName) => {
+    const obj = {
+      total: previousValue,
+      next: displayValue,
+      operation: operator,
+    };
+  
+    const result = calculate(obj, buttonName);
+  
+    if (result.total !== null) {
+      setPreviousValue(result.total);
+    } else {
+      setPreviousValue(null);
+    }
+  
+    setDisplayValue(result.next || '0');
+    setOperator(result.operation);
+  };
+  return (
   <div className="calculator">
     <div className="display">0</div>
     <div className="buttons">
@@ -41,6 +60,6 @@ const Calculator = () => {
       </div>
     </div>
   </div>
-};
+)};
 
 export default Calculator;
