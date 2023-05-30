@@ -16,9 +16,6 @@ const Calculator = () => {
 
     const result = calculate(obj, buttonName);
 
-    console.log('Button Click:', buttonName);
-    console.log('Calculation Result:', result);
-
     setPreviousValue(result.total || '0');
     setOperator(result.operation);
     setDisplayValue(buttonName === '=' ? result.total : result.next || '0');
