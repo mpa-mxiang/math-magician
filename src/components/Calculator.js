@@ -3,7 +3,10 @@ import './Calculator.css';
 import calculate from '../logic/calculate';
 import operate from '../logic/operate';
 
-const Calculator = () => (
+const Calculator = () => {
+  const [displayValue, setDisplayValue] = useState('0');
+  const [previousValue, setPreviousValue] = useState(null);
+  const [operator, setOperator] = useState(null);
   <div className="calculator">
     <div className="display">0</div>
     <div className="buttons">
@@ -38,6 +41,6 @@ const Calculator = () => (
       </div>
     </div>
   </div>
-);
+};
 
 export default Calculator;
