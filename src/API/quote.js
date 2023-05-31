@@ -42,12 +42,12 @@ const Quote = () => {
   }
 
   return (
-    <div className="quote">
+    <p className="quote">
       {quote}
       <br />
       {' - '}
       {author}
-    </div>
+    </p>
   );
 };
 
