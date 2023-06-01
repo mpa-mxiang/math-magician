@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import env from 'react-dotenv';
-
-const { API_KEY } = env;
 
 const Quote = () => {
   const [quote, setQuote] = useState('');
@@ -13,7 +10,7 @@ const Quote = () => {
     const fetchQuote = async () => {
       try {
         const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=computers', {
-          headers: { 'X-Api-Key': API_KEY },
+          headers: { 'X-Api-Key': process.env.REACT_APP_API_KEY },
         });
         if (!response.ok) {
           throw new Error('Failed to fetch quote');
