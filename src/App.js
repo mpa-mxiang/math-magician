@@ -23,9 +23,9 @@ const App = () => (
         </ul>
       </nav>
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/calculator" component={Calculator} />
-        <Route path="/quote" component={Quote} />
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
     </div>
   </Router>
