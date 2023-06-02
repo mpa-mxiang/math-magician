@@ -1,8 +1,10 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => (
   <div>
-    <h1>Welcome to our page</h1>
+    <h1>Math Matician</h1>
+    <h2>Welcome to our page</h2>
     <p>
       This is my first React SPA project,
       if you click &quot;calculator&quot; on the header,
