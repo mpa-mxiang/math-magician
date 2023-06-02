@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 
 const Home = () => (
-  <div>
+  <div className="home-page">
     <h2>Welcome to our page</h2>
     <p>
       This is my first React SPA project,
