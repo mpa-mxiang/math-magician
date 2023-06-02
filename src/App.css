@@ -20,3 +20,20 @@ h1 {
   margin-bottom: 2rem;
   font-family: 'Shantell Sans', cursive;
 }
+
+ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul {
+  background-color: #111;
+  padding: 0;
+}
+ul li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
