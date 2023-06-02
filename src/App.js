@@ -22,6 +22,8 @@ const App = () => (
           </li>
         </ul>
       </nav>
+
+      <h1>Math Matician</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/calculator" element={<Calculator />} />
