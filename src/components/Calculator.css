@@ -1,3 +1,9 @@
+.cal-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .calculator {
   width: 300px;
   background-color: #222;

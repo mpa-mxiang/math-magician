@@ -10,7 +10,7 @@ const Quote = () => {
     const fetchQuote = async () => {
       try {
         const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=computers', {
-          headers: { 'X-Api-Key': 'Li9ODOFpAaUK0MDTRseZng==ylEA1LwGwptZnDae' },
+          headers: { 'X-Api-Key': 'RqzsYlbztfomeiY69G9HwopQnjZEHkdl4qtqckB4' },
         });
         if (!response.ok) {
           throw new Error('Failed to fetch quote');
