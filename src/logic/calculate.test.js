@@ -1,6 +1,6 @@
-import calculate from './Calculate';
+import calculate from './calculate';
 
-describe('calculate', () => {
+describe('Calculator', () => {
   it('should clear the calculator data when AC button is clicked', () => {
     const obj = {
       total: '100',
