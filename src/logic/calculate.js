@@ -26,6 +26,7 @@ export default function calculate(obj, buttonName) {
     }
 
     if (obj.next && obj.next !== '0') {
+      // If there is an operation, update next
       return {
         next: obj.next + buttonName,
         total: null,
