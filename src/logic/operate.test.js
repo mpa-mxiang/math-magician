@@ -38,8 +38,7 @@ describe('operate', () => {
 
   it('should throw an error for unknown operation', () => {
     expect(() => operate('10', '5', '$')).toThrow(
-      "Unknown operation '$'"
+      "Unknown operation '$'",
     );
   });
-
 });

@@ -16,5 +16,4 @@ describe('Calculator', () => {
       operation: null,
     });
   });
-
 });
