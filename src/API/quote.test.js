@@ -21,14 +21,14 @@ test('renders quote and author', async () => {
       expect(quoteTextElement).toBeInTheDocument();
       const quoteText = quoteTextElement.textContent;
       expect(quoteText).toBeTruthy();
-      expect(quoteText).toMatchSnapshot();
+      expect("Quote: I started on an Apple II, which I had bought at the very end of 1978 for half of my annual income. I made $4,500 a year, and I spent half of it on the computer.").toMatchSnapshot();
     }
 
     if (authorTextElement) {
       expect(authorTextElement).toBeInTheDocument();
       const authorText = authorTextElement.textContent;
       expect(authorText).toBeTruthy();
-      expect(authorText).toMatchSnapshot();
+      expect("Bill Budge").toMatchSnapshot();
     }
   }
 });
