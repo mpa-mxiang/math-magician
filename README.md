@@ -18,7 +18,7 @@
 
     - [Key Features](#key-features)
     - [Future Features](#future-features)
-
+- [📖 Live Demo](#live-demo)
 
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -41,7 +41,7 @@ This is a project built with React.
 
 </a>
 
-- React setup
+- React components&events
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -49,15 +49,13 @@ This is a project built with React.
 
 </a>
 
-- Components
-- Events
-- Styles
-- Designs
-- API
-- Tests
+- hide API key
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+### Live Demo <a name="live-demo">
+math-magician-8z1x.onrender.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
