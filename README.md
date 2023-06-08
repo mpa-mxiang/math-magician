@@ -55,7 +55,7 @@ This is a project built with React.
 
 
 ### Live Demo <a name="live-demo">
-math-magician-8z1x.onrender.com
+[math-magician-8z1x.onrender.com](https://math-magician-8z1x.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
