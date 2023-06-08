@@ -21,12 +21,14 @@ test('renders quote and author', async () => {
       expect(quoteTextElement).toBeInTheDocument();
       const quoteText = quoteTextElement.textContent;
       expect(quoteText).toBeTruthy();
+      expect(quoteText).toMatchSnapshot();
     }
 
     if (authorTextElement) {
       expect(authorTextElement).toBeInTheDocument();
       const authorText = authorTextElement.textContent;
       expect(authorText).toBeTruthy();
+      expect(authorText).toMatchSnapshot();
     }
   }
 });
