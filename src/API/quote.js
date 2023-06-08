@@ -1,34 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const Quote = () => {
+const QuoteDisplay = () => {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=computers', {
-          headers: { 'X-Api-Key': 'Li9ODOFpAaUK0MDTRseZng==ylEA1LwGwptZnDae' },
-        });
+        const response = await fetch(
+          'https://api.api-ninjas.com/v1/quotes?category=happiness',
+          {
+            headers: {
+              'X-Api-Key': 'w8/NejPbZTsxEwElgouEjQ==KdFbINNY7YT2VwHc',
+            },
+          },
+        );
+
         if (!response.ok) {
           throw new Error('Failed to fetch quote');
         }
+
         const data = await response.json();
-        setQuote(data[0].quote);
-        setAuthor(data[0].author);
-        setIsLoading(false);
+        const randomQuote = data[0].quote;
+        const randomAuthor = data[0].author;
+        setQuote(randomQuote);
+        setAuthor(randomAuthor);
+        setLoading(false);
       } catch (error) {
         setError(error.message);
-        setIsLoading(false);
+        setLoading(false);
       }
     };
 
     fetchQuote();
   }, []);
 
-  if (isLoading) {
+  if (loading) {
     return <div>Loading...</div>;
   }
 
@@ -42,13 +51,14 @@ const Quote = () => {
   }
 
   return (
-    <p className="quote">
+    <div className="quote">
+      Quote:
+      {' '}
       {quote}
-      <br />
-      {' - '}
+      {' -'}
       {author}
-    </p>
+    </div>
   );
 };
 
-export default Quote;
+export default QuoteDisplay;
