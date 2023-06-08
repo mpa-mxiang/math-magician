@@ -10,7 +10,7 @@ const QuoteDisplay = () => {
     const fetchQuote = async () => {
       try {
         const response = await fetch(
-          'https://api.api-ninjas.com/v1/quotes?category=happiness',
+          'https://api.api-ninjas.com/v1/quotes?category=computers',
           {
             headers: {
               'X-Api-Key': 'w8/NejPbZTsxEwElgouEjQ==KdFbINNY7YT2VwHc',
