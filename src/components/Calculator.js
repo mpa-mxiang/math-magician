@@ -23,7 +23,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <div className="display">{displayValue}</div>
+      <div id="display" className="display">{displayValue}</div>
       <div className="buttons">
         <div className="row">
           <button onClick={() => handleButtonClick('AC')} type="button" className="clear-button">

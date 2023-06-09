@@ -18,7 +18,7 @@
 
     - [Key Features](#key-features)
     - [Future Features](#future-features)
-
+- [📖 Live Demo](#live-demo)
 
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -46,7 +46,7 @@ https://mpa-mxiang.github.io/math-magician/src/
 
 </a>
 
-- React setup
+- React components&events
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,15 +54,13 @@ https://mpa-mxiang.github.io/math-magician/src/
 
 </a>
 
-- Components
-- Events
-- Styles
-- Designs
-- API
-- Tests
+- hide API key
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+### Live Demo <a name="live-demo">
+[math-magician-8z1x.onrender.com](https://math-magician-8z1x.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

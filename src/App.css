@@ -7,6 +7,8 @@
 
 h1 {
   margin-bottom: 1rem;
+  padding: 3rem;
+  font-family: 'Shantell Sans', cursive;
 }
 
 .quote {
@@ -19,4 +21,27 @@ h1 {
   border-radius: 4px;
   margin-bottom: 2rem;
   font-family: 'Shantell Sans', cursive;
+}
+
+ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  background-color: #111;
+  padding: 0;
 }
