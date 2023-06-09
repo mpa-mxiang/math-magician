@@ -54,14 +54,15 @@ https://mpa-mxiang.github.io/math-magician/src/
 
 </a>
 
-- hide API key
+- Modify calculator display
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Live Demo <a name="live-demo">
-[math-magician-8z1x.onrender.com](https://math-magician-8z1x.onrender.com/)
 
+[  https://development--subtle-cheesecake-e0b934.netlify.app
+](https://development--subtle-cheesecake-e0b934.netlify.app/)  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
