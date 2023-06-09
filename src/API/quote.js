@@ -46,9 +46,9 @@ const QuoteDisplay = () => {
 
   return (
     <div className="quote">
-      Quote:
       {' '}
       {quote}
+      <br />
       {' -'}
       {author}
     </div>
