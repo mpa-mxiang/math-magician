@@ -5,20 +5,19 @@ import calculate from '../logic/calculate';
 const Calculator = () => {
   const [displayValue, setDisplayValue] = useState('0');
   const [previousValue, setPreviousValue] = useState(null);
-  const [operator, setOperator] = useState(null);
+  /* const [operator, setOperator] = useState(null); */
 
   const handleButtonClick = (buttonName) => {
     const obj = {
       total: previousValue,
       next: displayValue,
-      operation: operator,
+      operation: null, // operator,
     };
 
     const result = calculate(obj, buttonName);
-
     setPreviousValue(result.total || '0');
-    setOperator(result.operation);
-    setDisplayValue(buttonName === '=' ? result.total : result.next || '0');
+    /* setOperator(result.operation); */
+    setDisplayValue(buttonName === '=' ? result.total : result.next);
   };
 
   return (
