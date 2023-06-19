@@ -3,22 +3,16 @@ import './Calculator.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [displayValue, setDisplayValue] = useState('0');
-  const [previousValue, setPreviousValue] = useState(null);
-  const [operator, setOperator] = useState(null);
+  const [value, setValue] = useState(
+    {
+      total: null,
+      next: null,
+      operation: null,
+    },
+  );
 
   const handleButtonClick = (buttonName) => {
-    const obj = {
-      total: previousValue,
-      next: displayValue,
-      operation: operator,
-    };
-
-    const result = calculate(obj, buttonName);
-
-    setPreviousValue(result.total || '0');
-    setOperator(result.operation);
-    setDisplayValue(buttonName === '=' ? result.total : result.next || '0');
+    setValue((previousValue) => calculate(previousValue, buttonName));
   };
 
   return (
@@ -26,7 +20,7 @@ const Calculator = () => {
 
       <h2>Let&apos;s do some math!</h2>
       <div className="calculator">
-        <div className="display">{displayValue}</div>
+        <div className="display">{value.next || value.total || 0}</div>
         <div className="buttons">
           <div className="row">
             <button onClick={() => handleButtonClick('AC')} type="button" className="clear-button">
